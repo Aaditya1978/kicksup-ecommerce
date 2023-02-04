@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url(../../assets/fonts/Product_Sans.ttf);
+}
+
+@font-face {
+    font-family: 'Gobold';
+    src: url(../../assets/fonts/Gobold_Regular.otf);
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+    .header{
+        font-size: 2rem;
+        font-weight: 500;
+        font-family: 'Product Sans';
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .subheader{
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: 'Product Sans';
+        color: #000;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

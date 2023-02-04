@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url(../../assets/fonts/Product_Sans.ttf);
+}
+
+@font-face {
+    font-family: 'Gobold';
+    src: url(../../assets/fonts/Gobold_Regular.otf);
+}
+
+.addproduct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Product Sans';
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .goback{
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+
+        button{
+            padding: 10px 20px;
+            font-family: 'Product Sans';
+            font-size: 1.2rem;
+            font-weight: 500;
+            border: none;
+            border-radius: 5px;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .form{
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        padding: 20px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .form-item{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 20px;
+
+            label{
+                font-family: 'Product Sans';
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+
+            input[type="text"]{
+                width: 250px;
+                height: 35px;
+                font-family: 'Product Sans';
+                font-size: 1.2rem;
+                font-weight: 500;
+                border: 1px solid #252525;
+                border-radius: 5px;
+                outline: none;
+                margin-top: 5px;
+            }
+
+            input[type="number"]{
+                width: 250px;
+                height: 35px;
+                font-family: 'Product Sans';
+                font-size: 1.2rem;
+                font-weight: 500;
+                border: 1px solid #252525;
+                border-radius: 5px;
+                outline: none;
+                margin-top: 5px;
+            }
+
+            input[type="url"]{
+                width: 250px;
+                height: 35px;
+                font-family: 'Product Sans';
+                font-size: 1.2rem;
+                font-weight: 500;
+                border: 1px solid #252525;
+                border-radius: 5px;
+                outline: none;
+                margin-top: 5px;
+            }
+
+            .check{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                label{
+                    font-family: 'Product Sans';
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    margin-right: 20px;
+                }
+
+                input[type="checkbox"]{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            select{
+                width: 250px;
+                height: 35px;
+                font-family: 'Product Sans';
+                font-size: 1.2rem;
+                font-weight: 500;
+                border: 1px solid #252525;
+                border-radius: 5px;
+                outline: none;
+                margin-top: 5px;
+            }
+
+            button{
+                width: 200px;
+                height: 35px;
+                font-family: 'Product Sans';
+                font-size: 1.2rem;
+                font-weight: 500;
+                border: none;
+                border-radius: 5px;
+                background-color: #000;
+                color: #fff;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                margin-top: 10px;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

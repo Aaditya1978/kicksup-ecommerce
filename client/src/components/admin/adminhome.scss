@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url(../../assets/fonts/Product_Sans.ttf);
+}
+
+@font-face {
+    font-family: 'Gobold';
+    src: url(../../assets/fonts/Gobold_Regular.otf);
+}
+
+.adminhome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-family: 'Product Sans';
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .product-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        .heading{
+            font-family: 'Product Sans';
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .product-add{
+            width: 80%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 10px;
+
+            button{
+                padding: 10px 20px;
+                font-family: 'Product Sans';
+                font-size: 1.2rem;
+                font-weight: 600;
+                border: none;
+                border-radius: 5px;
+                background-color: #000;
+                color: #fff;
+                cursor: pointer;
+                transition: all 0.3ms ease-in-out;
+
+                &:hover{
+                    transform: scale(1.1);
+                }   
+            }
+        }
+
+        .product-list{
+            margin-top: 20px;
+            width: 600px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            padding: 20px;
+
+            .product-item{
+                border-bottom: 1px solid rgba(0,0,0,0.2);
+                margin-bottom: 40px;
+                padding: 30px 20px;
+
+                .product-images{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    img{
+                        width: 250px;
+                        height: 200px;
+                        margin-right: 10px;
+                    }
+                }
+
+                .product-details{
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                    .product-name{
+                        font-family: 'Product Sans';
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                    }
+
+                    .product-price{
+                        font-family: 'Product Sans';
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                    }
+
+                    .product-rating{
+                        font-family: 'Product Sans';
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                    }
+
+                    .product-category{
+                        font-family: 'Product Sans';
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                    }
+
+                    .product-sizes{
+                        font-family: 'Product Sans';
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .product-action{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    button{
+                        padding: 10px 20px;
+                        font-family: 'Product Sans';
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: #df1616;
+                        color: #fff;
+                        cursor: pointer;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

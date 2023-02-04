@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url(../../assets/fonts/Product_Sans.ttf);
+}
+
+@font-face {
+    font-family: 'Gobold';
+    src: url(../../assets/fonts/Gobold_Regular.otf);
+}
+
+.signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+    .signup-card{
+        width: 350px;
+        border: none;
+        border-radius: 7px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        padding: 60px 30px;
+        margin-bottom: 20px;
+
+        .signup-card-header{
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: 'Product Sans';
+            color: #000;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .signup-card-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            .signup-card-form-group{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+
+                label{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    font-family: 'Product Sans';
+                    color: #000;
+                    margin-bottom: 5px;
+                }
+
+                input{
+                    width: 70%;
+                    padding: 10px 20px;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    font-family: 'Product Sans';
+                    color: #000;
+                    border: 1px solid #000;
+                    border-radius: 5px;
+                    outline: none;
+                }
+
+                button{
+                    width: 150px;
+                    padding: 10px 20px;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    font-family: 'Product Sans';
+                    color: #fff;
+                    background: #000;
+                    border: none;
+                    border-radius: 5px;
+                    outline: none;
+                    cursor: pointer;
+                    transition: all 0.3ms ease-in-out;
+
+                    &:hover{
+                        background: #fff;
+                        color: #000;
+                        border: 1px solid #000;
+                    }
+                }
+            }
+        }
+
+        .signup-card-footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                font-size: 1.2rem;
+                font-weight: 500;
+                font-family: 'Product Sans';
+                color: #000;
+                margin-bottom: 5px;
+
+                span{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    font-family: 'Product Sans';
+                    color: #000;
+                    margin-bottom: 5px;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .signup-card-error{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+            font-family: 'Product Sans';
+            color: #e41818;
+            margin-bottom: 5px;
+        }
+    }
+}

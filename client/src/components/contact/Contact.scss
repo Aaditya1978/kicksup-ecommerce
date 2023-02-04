@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url(../../assets/fonts/Product_Sans.ttf);
+}
+
+@font-face {
+    font-family: 'Gobold';
+    src: url(../../assets/fonts/Gobold_Regular.otf);
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+    .contact-card{
+        width: 350px;
+        border: none;
+        border-radius: 7px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        padding: 60px 30px;
+        margin-bottom: 20px;
+
+        .heading{
+            font-size: 2rem;
+            font-weight: 500;
+            font-family: 'Product Sans';
+            color: #000;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .contact-item{
+                width: 70%;
+                text-align: left;
+
+                .item-heading{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    font-family: 'Product Sans';
+                    color: #000;
+                    margin-bottom: 5px;
+                }
+
+                .item-subheading{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    font-family: 'Product Sans';
+                    color: #000;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .social{
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        .heading{
+            font-size: 1rem;
+            font-weight: 500;
+            font-family: 'Product Sans';
+            color: #000;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .social-links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .social-item img{
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
